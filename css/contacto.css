@@ -1,0 +1,312 @@
+@font-face {
+  font-family: netflix;
+  src: url("../font/NetflixSans-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: netflix, sans-serif;
+}
+
+body {
+  /* Esquematizamos la página con grid, dividiendo los elementos */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 2px 50px 1fr 100px;
+  grid-template-areas:
+    "header"
+    "div"
+    "nav"
+    "main"
+    "footer";
+}
+/* ------------ HEADER ------------ */
+header {
+  grid-area: header;
+  background-image: url(../img/bannerOsc.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  /* Logo empresa*/
+  height: 150px;
+  width: 300px;
+}
+
+.datosContacto {
+  /* Datos de contacto */
+  font-size: 1.5rem;
+  padding: 20px;
+  list-style: none;
+}
+
+.datosContacto a {
+  text-decoration: none;
+  color: rgb(202, 202, 202);
+}
+
+.datosContacto a:hover {
+  color: black;
+  text-decoration: underline;
+}
+/* ------------ LINEA DIVISORA HEADER/NAV ------------ */
+.divisor {
+  height: 2px;
+  background-color: rgb(70, 70, 70);
+}
+/* ------------ NAV ------------ */
+.buscador {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.buscador a {
+  font-size: 1.5rem;
+  color: rgb(158, 156, 156);
+  text-decoration: none;
+}
+
+.buscador a:hover {
+  transform: scale(0.9);
+  color: black;
+}
+
+.buscador li {
+  /* Es el encargado de dividir las lineas de el nav por elementos */
+  position: relative;
+}
+
+.buscador li::before {
+  /* Linea de debajo del nav con la transicion para ver el movimiento de la linea al hacer hover, sino se vería de golpe sin el incremento*/
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: 400ms ease;
+}
+
+.buscador li:hover::before {
+  /* Al cambiar el ancho hacemos que se realice la transición anteriormente declarada */
+  width: 100%;
+}
+/* ------------ MAIN ------------ */
+
+main {
+  background-image: url(../img/fondo.jpg);
+  grid-area: main;
+}
+
+#titulo {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.bloques {
+  background-color: rgb(235, 234, 232);
+  height: 600px;
+  width: 1400px;
+  padding: 15px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 5px 5px grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5fr 0.5fr 0.5fr 0.5fr 3fr;
+  grid-template-areas:
+    "contactos mapa"
+    "web mapa"
+    "telefono mapa"
+    "mapInfo mapa"
+    "mapInfo mapa";
+}
+
+#contactos {
+  grid-area: contactos;
+  align-self: self-end;
+  margin-bottom: 20px;
+}
+
+.bloques p {
+  margin-left: 30px;
+}
+#web {
+  grid-area: web;
+}
+#telefono {
+  grid-area: telefono;
+}
+#mapInfo {
+  grid-area: mapInfo;
+}
+#mapa {
+  grid-area: mapa;
+  justify-self: center;
+  align-self: center;
+  height: 550px;
+  width: 650px;
+  border-radius: 10px;
+}
+
+/* ------------ FOOTER ------------ */
+
+footer {
+  /* Pie de página */
+  grid-area: footer;
+  background-color: rgb(33, 32, 32);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  /* Retirada de estilos a la lista desordenada */
+  list-style: none;
+}
+
+/* ------------ RESPONSIVE DIFERENTES PANTALLAS ------------ */
+
+@media screen and (max-width: 1928px) {
+  .bloques {
+    width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .datosContacto {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1435px) {
+  .bloques {
+    width: 900px;
+    height: 1000px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 50px 50px 50px 50px 600px;
+    grid-template-areas:
+      "contactos contactos"
+      "web web"
+      "telefono telefono"
+      "mapInfo mapInfo"
+      "mapInfo mapInfo"
+      "mapa mapa";
+  }
+
+  #contactos {
+    margin-left: 100px;
+  }
+
+  .bloques p {
+    margin-left: 130px;
+  }
+
+  #mapa {
+    height: 650px;
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  header {
+    justify-content: center;
+    background-image: none;
+    background-color: #5f5f5f;
+  }
+
+  .buscador a {
+    font-size: 1rem;
+  }
+
+  .bloques {
+    width: 600px;
+    height: 800px;
+  }
+
+  #contactos {
+    margin-left: 10px;
+    width: 500px;
+  }
+
+  .bloques p {
+    margin-left: 20px;
+  }
+
+  #mapa {
+    height: 450px;
+    width: 550px;
+    align-self: self-start;
+  }
+
+  footer ul li {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    grid-template-rows: 150px 2px 30px 1fr 100px;
+  }
+
+  .buscador {
+    height: 30px;
+  }
+
+  .buscador a {
+    font-size: 0.6rem;
+  }
+
+  .bloques {
+    width: 300px;
+    height: 600px;
+    grid-template-rows: 100px 60px 60px 60px 600px;
+    grid-template-areas:
+      "contactos contactos"
+      "web web"
+      "telefono telefono"
+      "mapInfo mapInfo"
+      "mapa mapa";
+  }
+
+  #contactos {
+    margin-left: 10px;
+    width: 250px;
+    align-self: center;
+  }
+
+  .bloques p {
+    margin-left: 20px;
+    width: 250px;
+    font-size: 0.8rem;
+  }
+
+  #mapa {
+    height: 270px;
+    width: 270px;
+    align-self: self-start;
+  }
+
+  footer ul li {
+    font-size: 0.6rem;
+  }
+}

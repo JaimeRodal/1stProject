@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumos - HJDC Electrics</title>
+
+    <link rel="stylesheet" href="./css/consumos.css" />
+    <link rel="icon" href="./img/bombillalogo.png" />
+  </head>
+  <body>
+    <header>
+      <ul class="datosContacto">
+        <li>
+          <a href="https://www.hackaboss.com/">https://www.hjdcelectrics.com</a>
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/dir/43.4096228,-8.1747421/hack+a+boss+direcci%C3%B3n/@43.3418025,-8.4531894,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0xd2e7d407997464b:0x5ee1171fbad2ceca!2m2!1d-8.3990519!2d43.3703402?entry=ttu"
+            >Rúa Real, 1, 15003 A Coruña</a
+          >
+        </li>
+        <li>
+          <a href="tel:+34912449191">(+34) 912 44 91 91</a>
+        </li>
+      </ul>
+
+      <img class="imgLogo" src="./img/logo.png" alt="logo HJDC" />
+    </header>
+    <div class="divisor"></div>
+    <nav class="nav">
+      <menu class="buscador">
+        <li>
+          <a href="./index.html">INICIO</a>
+        </li>
+        <li>
+          <a href="./consumos.html">CONSUMOS</a>
+        </li>
+        <li>
+          <a href="./contacto.html">CONTACTO</a>
+        </li>
+        <li>
+          <a href="./hjdc.html">HJDC</a>
+        </li>
+      </menu>
+    </nav>
+    <main>
+      <h2>CONSUMOS</h2>
+      <p class="fecha"></p>
+      <p class="textoInicial">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="15"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+          /></svg
+        >Aquí puedes ver los consumos de algunos electrodomésticos de uso
+        cotidiano:
+      </p>
+      <section class="contenedores">
+        <article class="articulos">
+          <h3>Estufa</h3>
+          <img src="./img/estufa.jpeg" alt="imagen de una estufa" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Nevera</h3>
+          <img src="./img/nevera.png" alt="imagen de una nevera" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Congelador</h3>
+          <img src="./img/congelador.jpg" alt="imagen de un congelador" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Vitrocerámica</h3>
+          <img src="./img/vitro.png" alt="imagen de una vitrocerámica" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Ordenador</h3>
+          <img src="./img/pc.jpg" alt="imagen de un ordenador" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>TV</h3>
+          <img src="./img/tv.png" alt="imagen de una televisión" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Lavadora</h3>
+          <img src="./img/lavadora.jpg" alt="imagen de una lavadora" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Microondas</h3>
+          <img src="./img/microondas.jpg" alt="imagen de un microondas" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Lavavajillas</h3>
+          <img src="./img/lavavajillas.jpg" alt="imagen de un lavavajillas" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Horno</h3>
+          <img src="./img/horno.jpg" alt="imagen de un horno" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+        <article class="articulos">
+          <h3>Secadora</h3>
+          <img src="./img/secadora.png" alt="imagen de una secadora" />
+          <p class="textConsAct">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+            Precio actual:
+          </p>
+          <div class="precioActual">
+            <p class="precioAct"></p>
+          </div>
+          <p class="textConsMin">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más barato:
+          </p>
+          <div class="precioMinimo">
+            <p class="precioMin"></p>
+          </div>
+          <p class="textConsMax">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="15"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              /></svg
+            >Precio tramo horario más caro:
+          </p>
+          <div class="precioMaximo">
+            <p class="precioMax"></p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          Electricity and electrical services provider , Calle Real 1, 15003, A
+          Coruña, is the authorized seller of our products and services on
+          hjdcelectrics.com
+        </li>
+        <li>
+          La información legal, las plantillas legales y las políticas legales
+          no se consideran asesoramiento legal.
+          <a href="https://www.youtube.com/shorts/16uJ-jxcKHo"
+            >Lea el descargo de responsabilidad.</a
+          >
+        </li>
+        <li>hjdcelectrics.com © 2002 - 2023 Reservados todos los derechos</li>
+      </ul>
+    </footer>
+    <script type="module" src="./js/api.js"></script>
+  </body>
+</html>
